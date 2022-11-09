@@ -22,7 +22,7 @@ public class MemoRepositoryTests {
 		System.out.println(memoRepository.getClass().getName());
 	}
 
-	// @Test
+	 @Test
 	public void testInsertDummies() {
 		IntStream.rangeClosed(1, 100).forEach(i -> {
 			Memo memo = Memo.builder().memoText("Sample...." + i).build();
@@ -52,7 +52,7 @@ public class MemoRepositoryTests {
 		memoRepository.deleteById(mno);
 	}
 	
-	@Test
+	// @Test
 	public void testPageDefault() {
 		Pageable pageable = PageRequest.of(0, 10);
 		Page<Memo> result = memoRepository.

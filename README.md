@@ -23,4 +23,4 @@
 
 ## ex3
 
-  Thymeleaf를 이용한 반복문 
+  Thymeleaf를 이용한 반복문 출력

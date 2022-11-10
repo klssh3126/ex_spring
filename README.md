@@ -6,12 +6,12 @@
 
 
 ## ex2
-<ul>
-  <li> 마리아 DB 설치, DB계정 설정 </li>
-  <li> JPA 소개, 엔티티 클래스와 JpaRepository 작성 </li>
-  <li> JPA와 JUnut 테스트를 통해, 등록/조회/수정/삭제 간단 실습  </li>
-  <li> 페이징/ 정렬 처리, 쿼리 메서드(Query Methods) 기능과 @Query 실습</li>
-</ul>
+
+  마리아 DB 설치, DB계정 설정 
+   JPA 소개, 엔티티 클래스와 JpaRepository 작성
+  JPA와 JUnut 테스트를 통해, 등록/조회/수정/삭제 간단 실습 
+   페이징/ 정렬 처리, 쿼리 메서드(Query Methods) 기능과 @Query 실습
+
 
 ####  에러1 발생</br>
 <p>lombok 라이브러리가 Junit 테스트코드에서 인식이 안되어 에러가 떴다. 스프링부트 시작할 때, lombok을 체크했다고 lombok을 사용할 수 있는게 아니었다.

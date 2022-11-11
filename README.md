@@ -39,7 +39,7 @@
   
 <details>
 <summary> 
- #### 에러1 발생 토글 접기/펼치기
+  <h4> HTML,타임리프 주석 문제발생 및 해결 </h4>
  </summary>
 <div markdown="1">
 

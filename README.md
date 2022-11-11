@@ -32,5 +32,4 @@
   #### 에러1 해결</br>
   타임리프 주석 형식은 < !--/*   */-- > 형태이다. 주석을 다시 고쳐쓰고, 경로를 호출해보니, 이번에는 정상적으로 데이터가 브라우저 화면에 출력이 되었다.
   
-  
-![bootstrap](https://user-images.githubusercontent.com/35258559/201243056-55017919-bf8a-4c4c-9675-962ba7d55a38.png)
+  ![bootstrap](https://user-images.githubusercontent.com/35258559/201243210-693f5c37-da18-466b-9d90-ca33cdabf33e.png)

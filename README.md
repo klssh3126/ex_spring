@@ -99,6 +99,7 @@
 
  (5) 이제 src/main/java에서 src/main/generated를 접근해서 사용할 수 있다.
 
+ (6) 만약 이클립스내에서 package 경로가 안맞을 경우, 해당 경로로 Q~.java 파일을 옮겨준다.
 
 </div>
 </details>

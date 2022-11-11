@@ -34,7 +34,7 @@
   Thymeleaf의 fragment를 이용한 레이아웃 기능 </br>
   th:insert, th:replace, 파라미터 방식의 처리 </br>
   레이아웃 템플릿 만들기 </br>
-  부트스트랩 레이아웃 템플릿 적용하기</br></br>
+  부트스트랩 레이아웃 템플릿 적용 실습</br></br>
   
   #### [부트스트랩 적용 결과]
   ![bootstrap](https://user-images.githubusercontent.com/35258559/201243210-693f5c37-da18-466b-9d90-ca33cdabf33e.png)

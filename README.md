@@ -27,7 +27,7 @@
   
   부트스트랩 레이아웃 적용하기</br></br>
   
-  ## 결과물
+  #### 결과물
   ![bootstrap](https://user-images.githubusercontent.com/35258559/201243210-693f5c37-da18-466b-9d90-ca33cdabf33e.png)
  
   #### 에러1 발생</br>

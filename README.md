@@ -44,15 +44,10 @@
   <h4>부트스트랩 적용 결과</h4>
  </summary>
 <div markdown="1">
-
   ![bootstrap](https://user-images.githubusercontent.com/35258559/201243210-693f5c37-da18-466b-9d90-ca33cdabf33e.png)
- 
 </div>
 </details>
   
-  
-
-
 <details>
 <summary> 
   <h4> HTML,타임리프 주석 문제발생 및 해결 </h4>

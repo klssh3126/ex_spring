@@ -65,3 +65,43 @@
 </div>
 </details>
   
+  
+  ## ex4
+  
+  <details>
+<summary> 
+  <h4> QueryDSL 설치방법 및 Build.gradle, Q도메인 변환 </h4>
+ </summary>
+<div markdown="1">
+
+ QueryDSL을 설치하기 위해서는 Build.gradle 파일에 특별한 코드를 추가해야 한다. (업로드 파일 참고) 이때, 이클립스와 IntelliJ의 코드는 다르다는걸 명심해야 한다. 이걸 모르고 구글의 IntelliJ 코드를 검색해서 계속 에러가 났다. 
+ 코드를 추가한 후, 프로젝트 우클릭, Gradle => refresh gradle project를 클릭해준다.
+
+(1) 이클립스 상단 메뉴에서 window 클릭
+
+(2) Show View -> other -> gradle 검색 -> Gradle Task 클릭
+
+(3) Gradle Task에서 해당 프로젝트를 더블클릭 
+
+(4) build 폴더로 가서 build를 선택 후 마우스 오른쪽 클릭
+
+(5) Run Gradle Tasks를 클릭하면 src 밑에 generated 폴더가 생성된다.
+
+프로젝트에 새로 생긴 generated의 경로를 추가해줘야 사용 가능
+
+ (1) 프로젝트 우클릭 -> Properties ->Java build Path
+
+ (2) Source 탭에서 Add Folder... 클릭
+
+ (3) src 밑에 새로 생긴 generated폴더 체크 후 확인
+
+ (4) apply 클릭 후 확인
+
+ (5) 이제 src/main/java에서 src/main/generated를 접근해서 사용할 수 있다.
+
+ (6) 만약 이클립스내에서 package 경로가 안맞을 경우, 해당 경로로 Q~.java 파일을 옮겨준다.
+
+</div>
+</details>
+  
+  

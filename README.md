@@ -38,9 +38,20 @@
   레이아웃 템플릿 만들기 </br>
   부트스트랩 레이아웃 템플릿 적용 실습</br></br>
   
-  #### [부트스트랩 적용 결과]
+  
+  <details>
+<summary> 
+  <h4>부트스트랩 적용 결과</h4>
+ </summary>
+<div markdown="1">
+
   ![bootstrap](https://user-images.githubusercontent.com/35258559/201243210-693f5c37-da18-466b-9d90-ca33cdabf33e.png)
  
+</div>
+</details>
+  
+  
+
 
 <details>
 <summary> 

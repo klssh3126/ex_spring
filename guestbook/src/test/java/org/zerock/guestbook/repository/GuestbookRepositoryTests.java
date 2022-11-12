@@ -6,7 +6,15 @@ import java.util.stream.IntStream;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.zerock.guestbook.entity.Guestbook;
+import org.zerock.guestbook.entity.QGuestbook;
+
+import com.querydsl.core.BooleanBuilder;
+import com.querydsl.core.types.dsl.BooleanExpression;
 
 @SpringBootTest
 public class GuestbookRepositoryTests {
@@ -24,7 +32,7 @@ public class GuestbookRepositoryTests {
 		});
 	}
 
-	@Test
+	//@Test
 	public void updateTest() {
 
 		Optional<Guestbook> result = guestbookRepository.findById(300L);
@@ -38,5 +46,26 @@ public class GuestbookRepositoryTests {
 
 			guestbookRepository.save(guestbook); // 이순간에 moddate가 업데이트 된다.
 		}
+	}
+	
+	@Test
+	public void testQuery1() {
+		Pageable pageable = PageRequest.of(0,10,Sort.by("gno").descending());
+		
+		QGuestbook qGuestbook = QGuestbook.guestbook; //1
+		
+		String keyword="1";
+		
+		BooleanBuilder builder = new BooleanBuilder(); //2
+		
+		BooleanExpression expression = qGuestbook.title.contains(keyword);
+		
+		builder.and(expression); //4
+		
+		Page<Guestbook> result = guestbookRepository.findAll(builder, pageable);//5
+		
+		result.stream().forEach(guestbook -> {
+			System.out.println(guestbook);
+		});
 	}
 }

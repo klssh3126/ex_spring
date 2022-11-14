@@ -69,7 +69,7 @@ public class GuestbookRepositoryTests {
 		});
 	}
 	
-	@Test
+	//@Test
 	public void testQuery2() {
 		Pageable pageable =PageRequest.of(0,10,Sort.by("gno").descending());
 		QGuestbook qGuestbook = QGuestbook.guestbook;

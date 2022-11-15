@@ -36,5 +36,8 @@ default GuestbookDTO entityToDto(Guestbook entity) {
 	
 	return dto;
 	}
+
+void remove(Long gno);
+void modify(GuestbookDTO dto);
 }
  

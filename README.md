@@ -68,8 +68,19 @@
   ## guestbook 방명록 프로젝트 
   
   QueryDSL 설정, 방명록 프로젝트 명세 이해 </br>
-  JPA로 방명록 엔티티 및 repository 작성 및 테스트코드 구현 (임시 데이터 등록, 내용 수정, 등록시간, 최종수정시간 업데이트) </br>
-  QueryDSL을 사용하여 단일, 다중항목 검색테스트 실습 </br>
+  JPA로 방명록 엔티티 및 repository 작성 및 테스트코드 구현 (더미 데이터 등록, 내용 수정, 등록시간, 최종수정시간 업데이트) </br>
+  QueryDSL을 사용하여 단일, 다중항목 검색테스트 실습 ex) 검색조건: 제목, 제목 or 내용, 제목 or 내용 or 작성자 </br>
+  Controller, DTO, Entity, Repository, Service, ServiceImpl 구현 </br>
+  dto <-> entity 변환 함수 작성 </br>
+  ServiceImpl 클래스에서 Repository 객체를 생성하여 DB로부터 엔티티를 가져오거나 저장 </br>
+  </br>
+  목록, 목록 페이징처리 </br>
+  게시글등록, 게시글 조회, 삭제, 수정</br>
+  QueryDSL을 사용하여 단일, 다중항목 검색처리  </br>
+  페이지 정보 및 검색조건 유지 </br>
+ 
+ 
+  
   
   
   <details>

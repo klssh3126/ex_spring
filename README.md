@@ -80,9 +80,18 @@
   페이지(page, size) 정보 및 검색조건(type, keyword) 유지 </br>
  
  
+<details>
+  <summary> 
+    <h4> 결과 홈페이지 </h4>
+   </summary>
+<div markdown="1">
+
+  ![image](https://user-images.githubusercontent.com/35258559/202375982-\49b2ce60-d600-4a9f-b417-6e2c3e1be71e.png)
   
-  
-  
+</div>
+</details>
+
+
   <details>
 <summary> 
   <h4> QueryDSL 설치방법 및 Build.gradle, Q도메인 변환 </h4>

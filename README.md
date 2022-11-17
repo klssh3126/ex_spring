@@ -85,11 +85,18 @@
     <h4> 결과 홈페이지 </h4>
    </summary>
 <div markdown="1">
-
+목록 페이지
+  
  ![image](https://user-images.githubusercontent.com/35258559/202380387-6ed092ec-6f72-4f8c-9d7b-827faacb4703.png)
 
+  <hr/>
+  조회 페이지
+  
   ![image](https://user-images.githubusercontent.com/35258559/202380588-b308ca5f-7ad9-4ef0-9634-5805d95db216.png)
 
+  <hr/>
+  수정 페이지
+  
   ![image](https://user-images.githubusercontent.com/35258559/202380732-917c5da0-7dd7-4d74-bfe3-8b5ba69d9681.png)
 
 </div>

@@ -51,7 +51,7 @@
 </details>
 <details>
 <summary> 
-  <h4> HTML,타임리프 주석 문제발생 및 해결 </h4>
+   HTML,타임리프 주석 문제발생 및 해결 
  </summary>
 <div markdown="1">
 

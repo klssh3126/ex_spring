@@ -17,7 +17,7 @@
 
  <details>
 <summary> 
-  <h4> lombok라이브러리의 JUnit 테스트코드 인식 문제발생 및 해결 </h4>
+  lombok라이브러리의 JUnit 테스트코드 인식 문제발생 및 해결
  </summary>
 <div markdown="1">
 
@@ -41,7 +41,7 @@
   
   <details>
 <summary> 
-  <h4>부트스트랩 적용 결과</h4>
+ 부트스트랩 적용 결과
  </summary>
 <div markdown="1">
   
@@ -59,7 +59,7 @@
   그랬더니, 타임리프의 파서 부분 [[${ data }]] 부분에서 오류가 발생했다.
   분명히 HTML 주석내에 있는 코드였다. 국비학원 수업때, 강사님께서 타임리프 주석은 다르다는걸 말씀했던게 불현듯 생각이 나서, 내용을 찾았다.
 
-  <h4>해결</h4>
+  해결
   타임리프 주석 형식은 < !--/*   */-- > 형태이다. 주석을 다시 고쳐쓰고, 경로를 호출해보니, 이번에는 정상적으로 데이터가 브라우저 화면에 출력이 되었다.
 </div>
 </details>
@@ -82,7 +82,7 @@
  
 <details>
   <summary> 
-    <h4> 결과 홈페이지 </h4>
+    결과 홈페이지 
    </summary>
 <div markdown="1">
 목록 페이지
@@ -104,7 +104,7 @@
 
   <details>
 <summary> 
-  <h4> QueryDSL 설치방법 및 Build.gradle, Q도메인 변환 </h4>
+  QueryDSL 설치방법 및 Build.gradle, Q도메인 변환 
  </summary>
 <div markdown="1">
 

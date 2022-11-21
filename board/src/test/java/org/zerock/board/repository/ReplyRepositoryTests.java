@@ -3,9 +3,10 @@ package org.zerock.board.repository;
 import java.util.Optional;
 import java.util.stream.IntStream;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
 import org.zerock.board.entity.Board;
 import org.zerock.board.entity.Reply;
 
@@ -36,7 +37,7 @@ public class ReplyRepositoryTests {
 		});
 	}
 	
-	@Test
+	//@Test
 	public void readReply1() {
 		
 		Optional<Reply> result = replyRepository.findById(1L);
@@ -45,5 +46,6 @@ public class ReplyRepositoryTests {
 		System.out.println(reply);
 		System.out.println(reply.getBoard());
 	}
+	
 	
 }

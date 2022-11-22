@@ -60,6 +60,7 @@ public class BoardServiceImpl implements BoardService{
 		
 		//댓글 부터 삭제
 		replyRepository.deleteByBno(bno);
+		
 		repository.deleteById(bno);
 	}
 	

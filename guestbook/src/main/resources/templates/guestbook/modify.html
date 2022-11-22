@@ -7,7 +7,7 @@
 	
 		<h1 class="mt-4">GuestBook Modify Page</h1>
 		
-		<form action="/guestbook/modify" method="post">
+		<form action="/board/modify" method="post">
 		
 		<!-- 페이지 번호 -->
 		<input type="hidden" name="page" th:value="${requestDTO.page}"> 
@@ -16,9 +16,9 @@
 		
 		
 		<div class="form-group">
-			<label >Gno</label>
-			<input type="text" class="form-control" name="gno"
-			th:value="${dto.gno}" readonly > 
+			<label >Bno</label>
+			<input type="text" class="form-control" name="bno"
+			th:value="${dto.bno}" readonly > 
 			</div>
 			
 			<div class="form-group">
@@ -61,10 +61,10 @@
 
 <script th:inline="javascript">
 	var actionForm = $("form"); //form 태그 객체
-	$(".removeBtn").click(function(){
+	$(".removeBtn").click(function(){//삭제 버튼을 클릭하면
 	
 		actionForm
-			.attr("action","/guestbook/remove")
+			.attr("action","/board/remove")
 			.attr("method","post");
 		
 		actionForm.submit();
@@ -77,7 +77,7 @@
 		}
 		
 		actionForm
-			.attr("action","/guestbook/modify")
+			.attr("action","/board/modify")
 			.attr("method","post")
 			.submit();
 	});
@@ -96,7 +96,7 @@
 		actionForm.append(keyword);
 		
 		actionForm
-			.attr("action","/guestbook/list")
+			.attr("action","/board/list")
 			.attr("method","get");
 		
 		actionForm.submit();

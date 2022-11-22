@@ -35,6 +35,7 @@ public class BoardController {
 	@PostMapping("/register")
 	public String registerPost(BoardDTO dto, RedirectAttributes redirectAttributes) {
 		log.info("dto...."+dto);
+		//새로 추가된 엔티티의 번호
 		Long bno = boardService.register(dto);
 		log.info("BNO: " +bno);
 		redirectAttributes.addFlashAttribute("msg",bno);

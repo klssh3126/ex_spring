@@ -79,10 +79,15 @@ public class BoardRepositoryTests {
 		});
 	}
 	
-	@Test
+	//@Test
 	public void testRead3() {
 		Object result = boardRepository.getBoardByBno(100L);
 		Object[] arr= (Object[])result;
 		System.out.println(Arrays.toString(arr));
+	}
+	
+	@Test
+	public void testSearch1() {
+		boardRepository.search1();
 	}
 }

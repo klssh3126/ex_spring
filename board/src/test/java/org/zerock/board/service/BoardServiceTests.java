@@ -40,13 +40,13 @@ public class BoardServiceTests {
 		System.out.println(boardDTO);
 	}
 	
-	@Test
+	//@Test
 	public void testRemove() {
 		Long bno = 2L;
 		boardService.removeWithReplies(bno);
 	}
 	
-	@Test
+	//@Test
 	public void testModify() {
 		
 		BoardDTO boardDTO = BoardDTO.builder()

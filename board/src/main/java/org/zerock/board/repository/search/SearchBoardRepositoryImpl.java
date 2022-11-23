@@ -126,8 +126,6 @@ public class SearchBoardRepositoryImpl extends QuerydslRepositorySupport impleme
 		long count = tuple.fetchCount();
 		log.info("COUNT: " + count);
 		
-		return new PageImpl<Object[]>(
-				result.stream().map(t->t.toArray()).collect(Collectors.toList()), pageable, count);
-
+		return new PageImpl<Object[]>(result.stream().map(t->t.toArray()).collect(Collectors.toList()), pageable, count);
 	}
 }

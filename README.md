@@ -75,7 +75,7 @@
   dto <-> entity 변환 함수 작성 </br>
   ServiceImpl 클래스에서 Repository 객체를 생성하여 DB로부터 엔티티를 가져오거나 저장 </br>
   </br>
-  목록, 페이징처리  </br>
+  목록, 페이징처리 구현 </br>
   게시글 (등록, 조회, 삭제, 수정) 구현 </br>
   QueryDSL을 사용하여 단일, 다중항목 검색 구현  </br>
   페이지(page, size) 정보 및 검색조건(type, keyword) 유지 </br>

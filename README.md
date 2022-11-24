@@ -69,7 +69,7 @@
   
   QueryDSL 설정, 방명록 프로젝트 명세 이해 </br>
   JPA로 방명록 엔티티 및 repository 작성 및 테스트코드 구현 (더미 데이터 등록, 내용 수정, 등록시간, 최종수정시간 업데이트) </br>
-  QueryDSL을 사용하여 단일, 다중항목 검색테스트 실습 </br> 
+  QueryDSL을 사용하여 단일, 다중조건 검색테스트 실습 </br> 
   ex) 검색조건: 제목/ 제목 or 내용/ 제목 or 내용 or 작성자 </br>
   Controller, DTO, Entity, Repository, Service, ServiceImpl 구현 </br>
   dto <-> entity 변환 함수 작성 </br>
@@ -150,4 +150,4 @@
  즉시(Eager) 로딩과 지연(Lazy) 로딩의 차이법</br>
  회원, 게시글, 댓글 더미데이터 등록, 수정, 삭제 구현 </br>
  JPQL의 결과로 나온 Object[]를 DTO타입으로 변환 </br>
- JPQL로 검색기능 구현하기 </br>
+ JPQL로 다중조건 검색기능 구현하기 </br>

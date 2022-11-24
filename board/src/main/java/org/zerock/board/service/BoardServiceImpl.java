@@ -45,10 +45,9 @@ public class BoardServiceImpl implements BoardService{
 		//	pageRequestDTO.getPageable(Sort.by("bno").descending()));
 		
 		Page<Object[]> result = repository.searchPage(
-				
 				pageRequestDTO.getType(),
 				pageRequestDTO.getKeyword(),
-				pageRequestDTO.getPageable(Sort.by("bno").descending()) );
+				pageRequestDTO.getPageable(Sort.by("bno").descending()));
 		
 		return new PageResultDTO<>(result, fn);
 	}

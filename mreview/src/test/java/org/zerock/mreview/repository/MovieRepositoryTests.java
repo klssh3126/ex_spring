@@ -27,7 +27,7 @@ public class MovieRepositoryTests {
 	
 	@Commit
 	@Transactional
-	//@Test
+@Test
 	public void insertMovies() {
 		
 		IntStream.rangeClosed(1,100).forEach(i->{
@@ -52,7 +52,7 @@ public class MovieRepositoryTests {
 	}
 	
 	
-	@Test
+	//@Test
 	public void testListPage() {
 		
 		PageRequest pageRequest = PageRequest.of(0, 10, Sort.by(Sort.Direction.DESC, "mno"));

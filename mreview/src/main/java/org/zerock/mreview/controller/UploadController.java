@@ -97,6 +97,7 @@ public class UploadController {
 			
 			//MIME타입 처리
 			header.add("Content-Type", Files.probeContentType(file.toPath()));
+			
 			//파일 데이터 처리
 			result = new ResponseEntity<>(FileCopyUtils.copyToByteArray(file), header, HttpStatus.OK);
 		}catch(Exception e) {

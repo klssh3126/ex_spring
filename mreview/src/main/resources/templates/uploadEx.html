@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<input name="uploadFiles" type ="file" multiple>
+	<input name="uploadFiles" type="file" multiple>
 	<button class="uploadBtn">Upload</button>
 
-<div class="uploadResult">
+	<div class="uploadResult"></div>
 
-</div>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+		crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.6.1.js" 
-integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
-crossorigin="anonymous"></script>
-		
 	<script>
 	
 	function showUploadedImages(arr){
-		
 		console.log(arr);
 		
 		var divArea=$(".uploadResult");
 		
-		for(var i =0 ;i<arr.length;i++){
-			divArea.append("<img src='/display?fileName="+arr[i].thumbnailURL+"'>");//thumbnailURL로 변경
+		var str ="";
+		
+		for(var i = 0 ; i<arr.length; i++){
+			str += "<div>";
+			str += "<img src='/display?fileName="+arr[i].thumbnailURL+"'>"; //thumbnailURL로 변경
+			str += "<button class ='removeBtn' data-name='"+arr[i].imageURL+"'>REMOVE</button>"
+			str += "</div>";
 		}
+		divArea.append(str);
 	}
 	
 		$('.uploadBtn').click(function(){
@@ -57,10 +60,24 @@ crossorigin="anonymous"></script>
 			error: function(jqXHR, textStatus, errorThrown){
 				console.log(textStatus);
 			}
-			});
-			
-			/* alert(); */
+			})
 		});
+		
+		$(".uploadResult").on("click",".removeBtn",function(e){
+			var target = $(this);
+			var fileName = target.data("name");
+			var targetDiv = $(this).closest("div");
+			
+			console.log(fileName);
+			
+			$.post('/removeFile', {fileName: fileName}, function(result){
+				console.log(result);
+				if(result===true){
+					targetDiv.remove();
+				}
+			})
+		});
+		
 	</script>
 </body>
 </html>

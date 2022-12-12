@@ -1,4 +1,4 @@
-package org.zerock.club.config;
+package org.zerock.club1.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

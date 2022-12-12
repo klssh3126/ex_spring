@@ -1,4 +1,4 @@
-package org.zerock.club;
+package org.zerock.club1;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(ClubApplication.class);
+		return application.sources(Club1Application.class);
 	}
 
 }

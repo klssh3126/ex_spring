@@ -1,10 +1,10 @@
-package org.zerock.club;
+package org.zerock.club1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ClubApplicationTests {
+class Club1ApplicationTests {
 
 	@Test
 	void contextLoads() {

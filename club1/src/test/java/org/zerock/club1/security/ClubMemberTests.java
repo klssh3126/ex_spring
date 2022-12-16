@@ -1,5 +1,6 @@
 package org.zerock.club1.security;
 
+import java.util.Optional;
 import java.util.stream.IntStream;
 
 import org.junit.jupiter.api.Test;
@@ -21,7 +22,7 @@ public class ClubMemberTests {
 	private PasswordEncoder passwordEncoder;
 	
 	
-	@Test
+	//@Test
 	public void insertDummies() {
 		
 		//1-   80까지는 USER만 지정
@@ -50,7 +51,15 @@ public class ClubMemberTests {
 				
 			repository.save(clubMember);
 		});
-		
 	}
 	
+	
+	@Test
+	public void testRead() {
+		
+		Optional<ClubMember> result = repository.findByEmail("user95@zerock.org", false);
+		
+		ClubMember clubMember = result.get();
+		System.out.println(clubMember);
+	}
 }

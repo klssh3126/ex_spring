@@ -209,7 +209,7 @@ Review를 처리할 때, @EntityGraph를 적용해서 Member도 같이 로딩하
 JPA와 연동하는 커스텀 로그인 처리
 - PasswordEncoder를 통한 패스워드 암호화(BCryptPasswordEncoder)
     - BCryptPasswordEncoder는 복호화가 불가능하고 매번 암호화된 값도 다름
-- DB에 회원의 이메일, 패스워드, 이름, 소셜 가입여부, 등록일/수정일, 권한 저장 
+- DB에 회원의 이메일, 패스워드, 이름, 소셜 가입여부, 등록일/수정일, 권한 저장  
 CSRF 공격
 
 Thymeleaf에서 로그인 정보 활용하기
